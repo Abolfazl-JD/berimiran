@@ -1,0 +1,33 @@
+{   
+    "message" : "hello world",
+    "en" : "EN",
+    "fa" : "FA",
+    "header" : {
+        "logo" : "App logo",
+        "links" : {
+            "user-link" : "user page",
+            "home-page" : "home page",
+            "link3" : "third link",
+            "link4" : "forth link"
+        }
+    },
+    "defaultLayout" : "Here is the default layout",
+    "usersLayout" : "Users layout is here",
+    "userPage" : "this is the user page",
+    "homeLink" : "back to home page",
+    "tryAnother" : "try another page",
+    "errorLayout" : "this is the 404 layout",
+    "notFound" : "The page you are looking for has not found",
+    "homePage" : {
+        "title" : "Home page",
+        "desc" : "here is the discription"
+    },
+    "pageUsers" : {
+        "title" : "User page",
+        "desc" : "the description about users page"
+    },
+    "404page" : {
+        "title" : "page not found",
+        "desc" : "404 page"
+    }
+}
