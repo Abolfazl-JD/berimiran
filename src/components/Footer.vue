@@ -3,15 +3,15 @@ import defaultData from '@/stores/data'
 </script>
 
 <template>
-    <footer class="block pt-20 black-blue w-full">
+    <footer class="block pt-5 md:pt-20 black-blue w-full">
         <div class="container mx-auto px-15px">
-            <div class="flex justify-around px-20">
+            <div class="md:(grid grid-cols-4) xl:px-50">
                 <div 
-                    class="text-right"
+                    class="text-center mt-10 md:(text-right mt-0)"
                     v-for="footerSection in defaultData.footer.sections"
                     :key="footerSection.id"
                 >
-                    <h2 class="text-white mb-2rem">
+                    <h2 class="text-white mb-1rem md:mb-2rem">
                         {{ footerSection.title }}
                     </h2>
                     <router-link
@@ -25,11 +25,11 @@ import defaultData from '@/stores/data'
                 </div>
 
                 <div>
-                    <h2 class="mb-3rem text-white text-center">
+                    <h2 class="mb-1rem mt-10 md:(mt-0 mb-3rem) text-white text-center">
                         {{ defaultData.footer.contact.title }}
                     </h2>
                     <div 
-                        class="mb-2 flex items-center gap-4 pl-18px" 
+                        class="justify-center mb-2 flex items-center gap-2 pl-18px md:justify-start" 
                         dir="ltr"
                         v-for="boxInfo in defaultData.footer.contact.social.addresses"
                         :key="boxInfo.id"
@@ -51,11 +51,14 @@ import defaultData from '@/stores/data'
                         <span class=" text-[#afb4bf]"> {{boxInfo.text}} </span>
                     </div>
 
-                    <div class="mt-6 footer-icons flex items-center gap-8 pl-18px" dir="ltr">
+                    <div 
+                        class="mt-6 justify-center mb-10 footer-icons flex items-center gap-8 pl-18px md:(justify-start mb-0)" 
+                        dir="ltr"
+                    >
                         <svg
                             v-for="footerIcon in defaultData.footer.contact.social.icons" 
                             :key="footerIcon"
-                            class="w-8 h-8 pointer text-white hover:text-[#1cc3b2] transition-all duration-300 ease fill-current"
+                            class="w-8 h-8 cursor-pointer text-white hover:text-[#1cc3b2] transition-all duration-300 ease fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 496 512"
                         >
