@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Footer: typeof import('./components/Footer.vue')['default']
     HeaderLocaleChanger: typeof import('./components/Header/LocaleChanger.vue')['default']
     HeaderNav: typeof import('./components/Header/Nav.vue')['default']
     HeaderThemeChanger: typeof import('./components/Header/ThemeChanger.vue')['default']
