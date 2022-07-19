@@ -7,22 +7,22 @@ const defaultData = {
             {
                 name: "صفحه اصلی",
                 id: uuid(),
-                link : ""
+                link : "/"
             },
             {
                 name: "درباره ما",
                 id: uuid(),
-                link : ""
+                link : "/about-us"
             },
             {
                 name: "انتخاب مقصد",
                 id: uuid(),
-                link : ""
+                link : "/destination-choose"
             },
             {
                 name: "سوغاتی",
                 id: uuid(),
-                link : ""
+                link : "/souvenirs"
             }
         ],
         welcome: [

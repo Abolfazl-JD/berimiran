@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useHead({
-    title: "صفحه اصلی",
+    title: "سوغاتی ها",
     meta: [
         {
             name: "description",
-            content : "توضیحات درباره صفحه اصلی"
+            content : "اوضیحات سوغاتی ها"
         }
     ]
 })
@@ -13,7 +13,7 @@ useHead({
 <template>
     <div class="home mt-20">
         <h2 class="text-3xl dark:text-white">
-            صفحه اصلی
+            سوغاتی
         </h2>
     </div>
 </template>
