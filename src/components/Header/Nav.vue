@@ -5,7 +5,7 @@ const showResponsiveMenu = ref(false)
 
 <template>
     <header>
-        <nav class="relative flex flex-wrap w-full items-center bg-light-500 dark:bg-dark-500">
+        <nav class="relative flex flex-wrap w-full items-center bg-blue-100">
             <div class="w-full flex justify-between items-center border-b border-solid border-gray-500 py-4 px-5">
                 <div class="flex gap-16">
                     <h1 class="text-2xl sm:text-4xl font-semibold dark:text-light-300">
@@ -93,6 +93,10 @@ const showResponsiveMenu = ref(false)
 </template>
 
 <style scoped>
+
+.dark nav {
+    background-color: #0e2737;
+}
 
 .dark .header-link {
     color : rgb(226, 226, 226);

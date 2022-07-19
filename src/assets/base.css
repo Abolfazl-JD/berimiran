@@ -36,3 +36,7 @@ body {
 .dark body {
   background-color : black
 }
+
+.text-green {
+  color : #03ff96
+}
