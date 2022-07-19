@@ -1,6 +1,7 @@
 import { v4 as uuid } from "uuid"
+import { DefaultDataType } from "@/types"
 
-const defaultData = {
+const defaultData : DefaultDataType = {
     header: {
         title: "بریم ایران",
         links: [
@@ -29,17 +30,20 @@ const defaultData = {
             {
                 text: "با بریم ایران سفرتان را به یاد ماندنی کنید",
                 button: "مکان های دیدنی استان ها",
-                id : uuid()
+                id : uuid(),
+                imageLink : ""
             },
             {
                 text: "قصد سفر به کجا داری ؟",
                 button: "انتخاب مقصد سفر",
-                id : uuid()
+                id : uuid(),
+                imageLink : ""
             },
             {
                 text: "با بریم ایران سفرتان را به یاد ماندنی کنید",
                 button: "به اشتراک گذاشتن تجربیات",
-                id : uuid()
+                id : uuid(),
+                imageLink : ""
             }
         ]
     },
@@ -50,7 +54,8 @@ const defaultData = {
             "بریم ایران به شما کمک می کند تا با جاذبه های گردشگری ایران آشنا شوید . هدف اصلی این سایت کمک به شما عزیزان برای انتخاب مقصد مناسب گردشگری میباشد",
             "همچنین شما می توانید تجربیات خودتان را از سفر به شهر های مختلف در صفحه مخصوص همان شهر با ما به اشتراک بگذارید"
         ],
-        button : "درباره ما"
+        button: "درباره ما",
+        imageLink : ""
     },
     sections: {
         popular: {
@@ -59,7 +64,8 @@ const defaultData = {
         contactus: {
             title: "تجربیات سفر خود را با ما به اشتراک بگذارید",
             subtitle: "با ما در ارتباط باشید و ما را همراهی کنید",
-            text : "ارتباط با ما"
+            text: "ارتباط با ما",
+            imageLink : ""
         },
         recommended: {
             title : "مقاصد گردشگری پیشنهاد شده برای شما"
