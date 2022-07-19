@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import defaultData from "@/stores/data"
 
 const showResponsiveMenu = ref(false)
 </script>
@@ -9,28 +10,17 @@ const showResponsiveMenu = ref(false)
             <div class="w-full flex justify-between items-center border-b border-solid border-gray-500 py-4 px-5">
                 <div class="flex gap-16">
                     <h1 class="text-2xl sm:text-4xl font-semibold dark:text-light-300">
-                        لوگوی برنامه
+                        {{ defaultData.header.title }}
                     </h1>
                     <ul class="hidden pt-2 font-medium md:(flex gap-6 items-center)">
-                        <li>
-                            <router-link to="/user" class="header-link" title="first link">
-                                صفحه کاربر
+                        <li v-for="link in defaultData.header.links" :key="link.id">
+                            <router-link 
+                                :to="link.link" 
+                                class="header-link" 
+                                :title="link.name"
+                            >
+                               {{ link.name }}
                             </router-link>
-                        </li>
-                        <li>
-                            <router-link to="/" class="header-link" title="second link">
-                                صفحه اصلی
-                            </router-link>
-                        </li>
-                        <li>
-                            <a class="header-link"  title="third link">
-                                لینک سوم
-                            </a>
-                        </li>
-                        <li>
-                            <a class="header-link"  title="forth link">
-                                لینک چهارم
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -74,17 +64,14 @@ const showResponsiveMenu = ref(false)
                 :class="showResponsiveMenu ? 'h-192px' : 'h-0 border-none'"
             >
                 <ul class="divide-y-1 divide-gray-300 dark:divide-gray-700">
-                    <li class="resposive-menu-item">
-                        <router-link to="/user"  title="first link">صفحه کاربر</router-link>
-                    </li>
-                    <li class="resposive-menu-item">
-                        <router-link to="/"  title="second link">صفحه اصلی</router-link>
-                    </li>
-                    <li class="resposive-menu-item">
-                        <a  title="third link">لینک سوم</a>
-                    </li>
-                    <li class="resposive-menu-item">
-                        <a  title="forth link">لینک چهارم</a>
+                    <li 
+                        class="resposive-menu-item"
+                        v-for="link in defaultData.header.links"
+                        :key="link.id"
+                    >
+                        <router-link :to="link.link"  :title="link.name">
+                            {{ link.name }}
+                        </router-link>
                     </li>
                 </ul>
             </div>
