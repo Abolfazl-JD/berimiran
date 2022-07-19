@@ -1,6 +1,5 @@
 <template>
   <div dir="rtl" class="app-container">
-    <HeaderNav />
     <RouterView />
   </div>
 </template>
