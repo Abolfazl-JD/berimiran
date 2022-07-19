@@ -3,7 +3,7 @@ import defaultData from '@/stores/data'
 </script>
 
 <template>
-    <footer class="block pt-5 md:pt-20 black-blue w-full">
+    <footer class="block pt-5 md:pt-20  bg-light-600 w-full">
         <div class="container mx-auto px-15px">
             <div class="md:(grid grid-cols-4) xl:px-50">
                 <div 
@@ -11,14 +11,14 @@ import defaultData from '@/stores/data'
                     v-for="footerSection in defaultData.footer.sections"
                     :key="footerSection.id"
                 >
-                    <h2 class="text-white mb-1rem md:mb-2rem">
+                    <h2 class="mb-1rem md:mb-2rem">
                         {{ footerSection.title }}
                     </h2>
                     <router-link
                         v-for="sectionLink in footerSection.links"
                         :key="sectionLink.id"
                         :to="sectionLink.address"
-                        class="text-[#ffffff80] block mb-18px transition-all duration-300 ease-in hover:text-[#14d6c3]"
+                        class="dark:(text-[#ffffff80]  hover:text-[#14d6c3]) text-dark-500 block mb-18px transition-all duration-300 ease-in  hover:text-green-700"
                     >
                         {{ sectionLink.text }}
                     </router-link>
@@ -35,7 +35,7 @@ import defaultData from '@/stores/data'
                         :key="boxInfo.id"
                     >
                         <svg 
-                            class="w-6 h-6 text-[#1cc3b2]" 
+                            class="w-6 h-6 text-green-700 dark:text-[#1cc3b2]" 
                             fill="none" 
                             stroke="currentColor" 
                             viewBox="0 0 24 24" 
@@ -48,7 +48,7 @@ import defaultData from '@/stores/data'
                                 :d="boxInfo.icon"
                             ></path>
                         </svg>
-                        <span class=" text-[#afb4bf]"> {{boxInfo.text}} </span>
+                        <span class="dark:text-[#afb4bf] text-dark-200"> {{boxInfo.text}} </span>
                     </div>
 
                     <div 
@@ -58,7 +58,7 @@ import defaultData from '@/stores/data'
                         <svg
                             v-for="footerIcon in defaultData.footer.contact.social.icons" 
                             :key="footerIcon"
-                            class="w-8 h-8 cursor-pointer text-white hover:text-[#1cc3b2] transition-all duration-300 ease fill-current"
+                            class="w-8 h-8 cursor-pointer dark:( text-white hover:text-[#1cc3b2]) text-dark-100 hover:text-green-700 transition-all duration-300 ease fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 496 512"
                         >
@@ -69,8 +69,8 @@ import defaultData from '@/stores/data'
                     </div>
                 </div>
             </div>
-            <div class="copywrite text-center py-15px border-t border-t-solid border-t-gray-700">
-                <p class="my-0 leading-29px text-[#afb4bf]"> {{ defaultData.footer.copyright }} </p>
+            <div class="copywrite text-center py-15px border-t border-t-solid border-t-gray-400 dark:border-t-gray-700">
+                <p class="my-0 leading-29px text-dark-200 dark:text-[#afb4bf]"> {{ defaultData.footer.copyright }} </p>
             </div>
         </div>
     </footer>
@@ -78,8 +78,17 @@ import defaultData from '@/stores/data'
 
 <style scoped>
 
+.dark footer {
+    background-color : #0e2737
+}
+
 footer h2 {
+    color: rgb(33, 37, 45);
     font-size: 18px;
     font-weight: 600;
+}
+
+.dark footer h2{
+    color : white
 }
 </style>

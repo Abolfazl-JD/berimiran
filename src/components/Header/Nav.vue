@@ -6,7 +6,7 @@ const showResponsiveMenu = ref(false)
 
 <template>
     <header>
-        <nav class="relative flex flex-wrap w-full items-center bg-blue-100">
+        <nav class="relative flex flex-wrap w-full items-center bg-light-600">
             <div class="w-full flex justify-between items-center border-b border-solid border-gray-500 py-4 px-5">
                 <div class="flex gap-16">
                     <h1 class="text-2xl sm:text-4xl font-semibold dark:text-light-300">
@@ -136,12 +136,12 @@ const showResponsiveMenu = ref(false)
 }
 
 .router-link-active {
-    color: #004ccd;
+    color: rgb(4, 120, 87);
 }
 
 .router-link-active:before {
     transform: scaleX(1);
-    background: #004ccd
+    background: rgb(4, 120, 87)
 }
 
 </style>
