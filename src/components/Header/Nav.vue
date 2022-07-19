@@ -135,4 +135,17 @@ const showResponsiveMenu = ref(false)
     cursor: pointer;
 }
 
+.router-link-active:before {
+    transform: scaleX(1);
+}
+
+.dark .router-link-active:before {
+    transform: scaleX(1);
+    background: #03ff96
+}
+
+.dark .router-link-active {
+    color: #03ff96
+}
+
 </style>
