@@ -18,6 +18,7 @@ import defaultData from '@/stores/data'
                         v-for="sectionLink in footerSection.links"
                         :key="sectionLink.id"
                         :to="sectionLink.address"
+                        class="text-[#ffffff80] block mb-18px transition-all duration-300 ease-in hover:text-[#14d6c3]"
                     >
                         {{ sectionLink.text }}
                     </router-link>
@@ -54,7 +55,7 @@ import defaultData from '@/stores/data'
                         <svg
                             v-for="footerIcon in defaultData.footer.contact.social.icons" 
                             :key="footerIcon"
-                            class="w-8 h-8 transition-all duration-300 ease fill-current"
+                            class="w-8 h-8 pointer text-white hover:text-[#1cc3b2] transition-all duration-300 ease fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 496 512"
                         >
@@ -74,29 +75,8 @@ import defaultData from '@/stores/data'
 
 <style scoped>
 
-footer a {
-    color: rgba(255, 255, 255, 0.5);
-    display: block;
-    margin-bottom: 18px;
-    transition: 0.3s all ease-in;
-}
-
-footer a:hover {
-    color: #14d6c3;
-}
-
 footer h2 {
     font-size: 18px;
     font-weight: 600;
-}
-
-.footer-icons svg {
-    cursor: pointer;
-    color: white;
-    
-}
-
-.footer-icons svg:hover {
-    color: #1cc3b2;
 }
 </style>
