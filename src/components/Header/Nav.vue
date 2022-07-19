@@ -148,4 +148,13 @@ const showResponsiveMenu = ref(false)
     color: #03ff96
 }
 
+.router-link-active {
+    color: #004ccd;
+}
+
+.router-link-active:before {
+    transform: scaleX(1);
+    background: #004ccd
+}
+
 </style>
