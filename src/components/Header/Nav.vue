@@ -116,7 +116,7 @@ const showResponsiveMenu = ref(false)
   bottom: 0;
   width: 100%;
   height: 1.5px;
-  background: rgb(52, 52, 52);
+  background: #0e2737;
   transform: scaleX(0);
 }
 
