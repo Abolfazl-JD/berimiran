@@ -14,10 +14,10 @@ import defaultData from '@/stores/data'
                     />
                 </div>
                 <div class=" xl:(pr-55px pl-93px ) md:(w-1/2 mt-0 text-right pr-5) text-center mt-10 w-full ">
-                    <span class="text-[#215600]">
+                    <span class="text-[#215600] dark:text-green-400">
                         {{ defaultData.about.subtitle }}
                     </span>
-                    <h2 class="mt-10px md:(text-size-2rem leading-50px) text-size-1.5rem leading-35px mb-3.5rem font-medium">
+                    <h2 class="mt-10px dark:text-white md:(text-size-2rem leading-50px) text-size-1.5rem leading-35px mb-3.5rem font-medium">
                         {{ defaultData.about.title }}
                     </h2>
                     <p 
@@ -27,7 +27,7 @@ import defaultData from '@/stores/data'
                     >
                         {{ paragraph }}
                     </p>
-                    <button class="md:(float-left ml-20px) about-button">
+                    <button class="md:(float-left ml-20px) hover:(bg-transparent text-green-700) dark:hover:text-green-500 about-button">
                         {{ defaultData.about.button }}
                     </button>
                 </div>
@@ -48,8 +48,4 @@ import defaultData from '@/stores/data'
     transition: all 0.3s ease;
 }
 
-.about-button:hover {
-    background-color: #fff;
-    color: #015322;
-}
 </style>

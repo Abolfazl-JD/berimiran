@@ -39,6 +39,10 @@ p {
     margin-bottom : 1rem
 }
 
+.dark p {
+  color : #999
+}
+
 .dark body {
   background-color : black
 }
