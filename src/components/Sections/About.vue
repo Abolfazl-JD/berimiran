@@ -3,7 +3,7 @@ import defaultData from '@/stores/data'
 </script>
 
 <template>
-    <section class="about ms:mt-150px mt-50px">
+    <section class="about md:mt-150px mt-50px">
         <div class="w-full px-10px">
             <div class="xl:(pr-32) md:(flex justify-around items-start) pl-0">
                 <div class="md:w-1/2 w-full">
