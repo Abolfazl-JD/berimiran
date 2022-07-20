@@ -91,7 +91,8 @@ interface singleUnited {
     name : string
     nickedName: string
     id : string
-    stars: number
+    stars: number,
+    island : boolean
     cities : singleCity[]
 }
 
