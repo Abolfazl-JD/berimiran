@@ -14,5 +14,6 @@ useHead({
 <template>
     <div class="home">
         <HeaderWelcome />
+        <SectionsAbout />
     </div>
 </template>

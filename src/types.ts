@@ -53,8 +53,7 @@ interface AboutItems {
     subtitle: string,
     title: string,
     paragraphs: string[]
-    button: string,
-    imageLink : ""
+    button: string
 }
 
 interface InfoItem {

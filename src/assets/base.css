@@ -33,6 +33,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+    color: #797979;
+    line-height: 29px;
+    margin-bottom : 1rem
+}
+
 .dark body {
   background-color : black
 }
