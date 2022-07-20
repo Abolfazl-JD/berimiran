@@ -31,19 +31,19 @@ const defaultData : DefaultDataType = {
                 text: "با بریم ایران سفرتان را به یاد ماندنی کنید",
                 button: "مکان های دیدنی استان ها",
                 id : uuid(),
-                imageLink : ""
+                imageLink : "img1"
             },
             {
                 text: "قصد سفر به کجا داری ؟",
                 button: "انتخاب مقصد سفر",
                 id : uuid(),
-                imageLink : ""
+                imageLink : "img2"
             },
             {
                 text: "با بریم ایران سفرتان را به یاد ماندنی کنید",
                 button: "به اشتراک گذاشتن تجربیات",
                 id : uuid(),
-                imageLink : ""
+                imageLink : "img3"
             }
         ]
     },
