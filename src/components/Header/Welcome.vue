@@ -33,7 +33,7 @@ import 'swiper/css/autoplay';
                 <div class="pt-128px md:pt-235px">
                     <div class="container px-10 mx-auto">
                         <div class="w-full text-center">
-                            <h1 class="text-white text-size-22px  text-shadow-sm mb-0.5rem font-medium leading-37px mt-0 md:(text-size-2.5rem leading-5)">
+                            <h1 class="text-white text-size-22px  text-shadow-sm mb-0.5rem font-medium leading-37px mt-0 md:(text-size-2.5rem leading-5 mb-1.5rem)">
                                 {{ welcomePic.text }}
                             </h1>
                             <button class="mt-33px border-none rounded-md text-white py-13px px-3 text-size-13px md:(px-28px text-size-17px) transition-all duration-300 ease">
