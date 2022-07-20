@@ -1,9 +1,9 @@
 export interface DefaultDataType{
     header: {
-        title: string,
+        title: string
         links: LinkType[]
         welcome: WelcomeItems[]
-    },
+    }
     about: AboutItems
     sections: {
         popular: {
@@ -12,7 +12,7 @@ export interface DefaultDataType{
         contactus: {
             title: string
             subtitle: string
-            text: string,
+            text: string
             imageLink : ""
         }
         recommended: {
@@ -22,62 +22,92 @@ export interface DefaultDataType{
             title: string
             info : InfoItem[]
         }
-    },
+    }
     footer: {
         sections: FooterSectionType[]
         contact: {
-            title: string,
+            title: string
             social: {
                 addresses : AddressType[]
                 icons: string[]
             }
-        },
+        }
         copyright : string
     }
 }
 
-export interface LinkType {
-    name: string,
-    id: string,
+
+interface LinkType {
+    name: string
+    id: string
     link : string
 }
 
-export interface WelcomeItems {
-    text: string,
-    button: string,
-    id : string,
+interface WelcomeItems {
+    text: string
+    button: string
+    id : string
     imageLink : string
 }
 
 interface AboutItems {
-    subtitle: string,
-    title: string,
+    subtitle: string
+    title: string
     paragraphs: string[]
     button: string
 }
 
 interface InfoItem {
-    title: string,
-    icon: string,
-    id: string,
+    title: string
+    icon: string
+    id: string
     text: string
 }
 
 interface FooterLinkType {
-    text: string,
-    address: string,
+    text: string
+    address: string
     id : string
 }
 
 interface FooterSectionType {
-    title: string,
+    title: string
     links: FooterLinkType[]
     id : string
 }
 
 interface AddressType {
-    name : string,
-    text: string,
-    id: string,
+    name : string
+    text: string
+    id: string
     icon : string
+}
+
+
+export type unitedsType  = singleUnited[]
+
+interface singleUnited {
+    title: string
+    name : string
+    nickedName: string
+    id : string
+    stars: number
+    cities : singleCity[]
+}
+
+interface singleCity {
+    title: string
+    name: string
+    id: string
+    nickedName: string
+    imgLink: string
+    location: string
+    tourismSites : singlePlace[]
+}
+
+interface singlePlace {
+    title: string
+    name: string
+    id: string
+    siteLink : string
 }
