@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     HeaderLocaleChanger: typeof import('./components/Header/LocaleChanger.vue')['default']
     HeaderNav: typeof import('./components/Header/Nav.vue')['default']
     HeaderThemeChanger: typeof import('./components/Header/ThemeChanger.vue')['default']
+    HeaderWelcome: typeof import('./components/Header/Welcome.vue')['default']
     IconsIconCommunity: typeof import('./components/icons/IconCommunity.vue')['default']
     IconsIconDocumentation: typeof import('./components/icons/IconDocumentation.vue')['default']
     IconsIconEcosystem: typeof import('./components/icons/IconEcosystem.vue')['default']
