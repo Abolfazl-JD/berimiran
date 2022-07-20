@@ -8,11 +8,11 @@ const showResponsiveMenu = ref(false)
     <header>
         <nav class="relative flex flex-wrap w-full items-center bg-light-600">
             <div class="w-full flex justify-between items-center border-b border-solid border-gray-500 py-4 px-5">
-                <div class="flex gap-16">
+                <div class="flex gap-22">
                     <h1 class="text-2xl sm:text-4xl font-semibold dark:text-light-300">
                         {{ defaultData.header.title }}
                     </h1>
-                    <ul class="hidden pt-2 font-medium md:(flex gap-6 items-center)">
+                    <ul class="hidden pt-2 font-medium md:(flex gap-12 items-center)">
                         <li v-for="link in defaultData.header.links" :key="link.id">
                             <router-link 
                                 :to="link.link" 
@@ -91,6 +91,7 @@ const showResponsiveMenu = ref(false)
 .header-link {
     padding-bottom: 3px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .header-link:before, .header-link:after {
