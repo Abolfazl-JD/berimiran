@@ -47,10 +47,10 @@ import 'swiper/css/autoplay';
             </div>
         </swiper-slide>
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer h-8 w-8 absolute text-white top-1/3 z-10 -right-1 sm:right-2 left-auto sbnext" viewBox="0 0 20 20" fill="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon -right-1 sm:right-2 left-auto sbnext" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer h-8 w-8 absolute text-white top-1/3 z-10 -left-1 sm:left-2 right-auto sbprev" viewBox="0 0 20 20" fill="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon -left-1 sm:left-2 right-auto sbprev" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
         </svg>
     </swiper>
