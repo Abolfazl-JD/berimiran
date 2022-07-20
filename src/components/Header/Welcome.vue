@@ -57,7 +57,7 @@ import 'swiper/css/autoplay';
 </template>
 
 
-<style>
+<style scoped>
 .overlay {
     content: '';
     opacity: .55;
@@ -96,11 +96,4 @@ import 'swiper/css/autoplay';
     background: url(@/assets/images/welcome-pictures/img3.jpg)
 }
 
-.swiper-pagination span {
-    background : #fff
-}
-
-.swiper-button-disabled {
-    opacity: 0.4;
-}
 </style>

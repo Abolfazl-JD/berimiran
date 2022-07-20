@@ -44,3 +44,11 @@ body {
 .black-blue {
   background-color : #0e2737
 }
+
+.swiper-pagination span {
+    background : #fff
+}
+
+.swiper-button-disabled {
+    opacity: 0.4;
+}
