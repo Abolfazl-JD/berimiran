@@ -13,11 +13,11 @@ const getImageUrl = () => {
 
 <template>
     <a class="max-w-350px mx-auto block">
-        <div class="mt-5 transition-all ease duration-300 hover:mt-10px cursor-pointer">
+        <div class="mt-5 transition-all united-box ease duration-300 hover:mt-10px cursor-pointer">
             <img 
                 :src="getImageUrl()" 
                 alt=""
-                class="h-250px w-350px transition-all ease duration-300 p-0.25rem bg-light-500 border border-solid border-gray-400 max-w-full"
+                class="h-250px united-pic w-350px transition-all ease duration-300 p-0.25rem bg-light-500 border border-solid border-gray-400 max-w-full"
             />
             <div class="text-center rounded-md rounded-t-none bg-white py-3 my-0 mx-auto border-t-0 border border-dotted border-gray-500">
                 <h3 class="text-black text-size-25px font-medium mb-0.5rem leading-5">
@@ -54,3 +54,10 @@ const getImageUrl = () => {
         </div>
     </a>
 </template>
+
+<style scoped>
+.united-box:hover .united-pic {
+    filter: grayscale(100%);
+}
+
+</style>
