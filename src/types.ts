@@ -56,7 +56,7 @@ interface AboutItems {
     button: string
 }
 
-interface InfoItem {
+export interface InfoItem {
     title: string
     icon: string
     id: string

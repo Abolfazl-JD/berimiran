@@ -24,6 +24,7 @@ declare module '@vue/runtime-core' {
     SectionsPopDestinations: typeof import('./components/Sections/PopDestinations.vue')['default']
     SectionsRecommededDets: typeof import('./components/Sections/RecommededDets.vue')['default']
     SectionsServices: typeof import('./components/Sections/Services.vue')['default']
+    Service: typeof import('./components/Service.vue')['default']
     United: typeof import('./components/United.vue')['default']
   }
 }
