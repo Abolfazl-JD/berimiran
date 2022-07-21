@@ -33,7 +33,7 @@ const swiperOptions = reactive({
     <section class="text-center bg-light-700 dark:bg-dark-900 md:(pt-100px pb-135px) py-10 block">
         <div class="container md:px-10 px-2 mx-auto">
             <div class="w-full text-center mb-57px">
-                <h2 class="text-green-800 dark:text-green-500 text-size-2rem">
+                <h2 class="text-green-800 dark:text-green-400 text-size-2rem">
                     {{ defaultData.sections.recommended.title }}
                 </h2>
             </div>
