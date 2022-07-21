@@ -13,7 +13,6 @@ export interface DefaultDataType{
             title: string
             subtitle: string
             text: string
-            imageLink : ""
         }
         recommended: {
             title : string

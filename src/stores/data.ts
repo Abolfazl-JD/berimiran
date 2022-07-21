@@ -63,8 +63,7 @@ const defaultData : DefaultDataType = {
         contactus: {
             title: "تجربیات سفر خود را با ما به اشتراک بگذارید",
             subtitle: "با ما در ارتباط باشید و ما را همراهی کنید",
-            text: "ارتباط با ما",
-            imageLink : ""
+            text: "ارتباط با ما"
         },
         recommended: {
             title : "مقاصد گردشگری پیشنهاد شده برای شما"
