@@ -59,11 +59,15 @@ p {
     background : #fff
 }
 
-#welcome-swiper .swiper-button-disabled {
+.swiper-button-disabled {
     opacity: 0.4;
 }
 
 .intro-swiper .swiper-pagination{
   position : relative;
   bottom : -5px !important
+}
+
+.dark .intro-swiper .swiper-pagination span {
+    background : #999
 }
