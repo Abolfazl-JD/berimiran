@@ -12,8 +12,8 @@ const getImageUrl = () => {
 </script>
 
 <template>
-    <a class="max-w-350px mx-auto">
-        <div class="mt-5 transition-all ease duration-300">
+    <a class="max-w-350px mx-auto block">
+        <div class="mt-5 transition-all ease duration-300 hover:mt-10px cursor-pointer">
             <img 
                 :src="getImageUrl()" 
                 alt=""
