@@ -65,6 +65,51 @@ const uniteds: unitedsType = [
     island : false,
     cities : []
   },
+  {
+    title: 'قشم',
+    name : 'qeshm',
+    nickedName: 'سرزمین عجایب هفتگانه',
+    id : uuid(),
+    stars: 5,
+    island : true,
+    cities : []
+  },
+  {
+    title: 'خراسان رضوی',
+    name : 'razavi-khorasan',
+    nickedName: 'پایتخت گردشگری مذهبی',
+    id : uuid(),
+    stars: 3,
+    island : false,
+    cities : []
+  },
+  {
+    title: 'چهارمحال بختیاری',
+    name : 'bakhtiari-chaharmahal',
+    nickedName: 'سوئیس ایران',
+    id : uuid(),
+    stars: 3,
+    island : false,
+    cities : []
+  },
+  {
+    title: 'لرستان',
+    name : 'lorestan',
+    nickedName: 'سرزمین آبشارها',
+    id : uuid(),
+    stars: 4,
+    island : false,
+    cities : []
+  },
+  {
+    title: 'ایلام',
+    name : 'ilam',
+    nickedName: 'عروس زاگرس',
+    id : uuid(),
+    stars: 3,
+    island : false,
+    cities : []
+  },
 ]
 
 export default uniteds
