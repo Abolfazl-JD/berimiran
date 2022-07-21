@@ -86,7 +86,7 @@ interface AddressType {
 
 export type unitedsType  = singleUnited[]
 
-interface singleUnited {
+export interface singleUnited {
     title: string
     name : string
     nickedName: string

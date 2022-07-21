@@ -15,6 +15,6 @@ useHead({
     <div class="home">
         <HeaderWelcome />
         <SectionsAbout />
-        <United />
+        <SectionsPopDestinations />
     </div>
 </template>

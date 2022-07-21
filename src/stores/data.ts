@@ -28,7 +28,7 @@ const defaultData : DefaultDataType = {
         ],
         welcome: [
             {
-                text: "با بریم ایران سفرتان را به یاد ماندنی کنید",
+                text: "معرفی جاذبه های گردشگری شهر های ایران",
                 button: "مکان های دیدنی استان ها",
                 id : uuid(),
                 imageLink : "img1"
