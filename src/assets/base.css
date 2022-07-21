@@ -64,10 +64,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color : #0e2737
 }
 
-.swiper-pagination span {
+#welcome-swiper .swiper-pagination span {
     background : #fff
 }
 
-.swiper-button-disabled {
+#welcome-swiper .swiper-button-disabled {
     opacity: 0.4;
 }

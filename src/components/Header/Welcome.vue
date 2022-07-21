@@ -13,6 +13,7 @@ import 'swiper/css/autoplay';
 
 <template>
     <swiper
+        id="welcome-swiper"
         dir="ltr"
         :modules="[Navigation, Pagination, A11y, Autoplay]"
         :slides-per-view="1"
