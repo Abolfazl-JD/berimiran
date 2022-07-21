@@ -17,7 +17,7 @@ import defaultData from '@/stores/data'
                     <span class="text-[#215600] dark:text-green-400">
                         {{ defaultData.about.subtitle }}
                     </span>
-                    <h2 class="mt-10px dark:text-white md:(text-size-2rem leading-50px) text-size-1.5rem leading-35px mb-3.5rem font-medium">
+                    <h2 class="mt-10px dark:text-white md:(text-size-2rem) leading-50px text-size-1.5rem mb-3.5rem font-medium">
                         {{ defaultData.about.title }}
                     </h2>
                     <p 
