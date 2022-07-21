@@ -5,8 +5,8 @@ const props = defineProps<{
     unitedInfo : singleUnited
 }>()
 
-const getImageUrl = (name: string) => {
-    return new URL(`../assets/images/uniteds/${name}/united.jpg`, import.meta.url).href
+const getImageUrl = () => {
+    return new URL(`../assets/images/uniteds/${props.unitedInfo.name}/united.jpg`, import.meta.url).href
 }
 
 </script>
@@ -15,7 +15,7 @@ const getImageUrl = (name: string) => {
     <a class="max-w-350px mx-auto">
         <div class="mt-5 transition-all ease duration-300">
             <img 
-                :src="getImageUrl(unitedInfo.name)" 
+                :src="getImageUrl()" 
                 alt=""
                 class="h-250px w-350px transition-all ease duration-300 p-0.25rem bg-light-500 border border-solid border-gray-400 max-w-full"
             />
