@@ -21,7 +21,7 @@ const getImageUrl = () => {
             />
             <div class="text-center rounded-md rounded-t-none bg-white py-3 my-0 mx-auto border-t-0 border border-dotted border-gray-500">
                 <h3 class="text-black text-size-25px font-medium mb-0.5rem leading-5">
-                     استان {{ unitedInfo.title }}
+                     {{unitedInfo.island ? ' جزیره ' : 'استان ' }}{{ unitedInfo.title }}
                 </h3>
                 <span class="text-size-14px text-gray-800">
                     لقب استان : {{ unitedInfo.nickedName }}

@@ -30,6 +30,15 @@ const uniteds: unitedsType = [
     cities : []
   },
   {
+    title: 'کیش',
+    name : 'kish',
+    nickedName: 'عروس جزایر مرجانی',
+    island : true,
+    id : uuid(),
+    stars: 5,
+    cities : []
+  },
+  {
     title: 'اصفهان',
     name : 'esfahan',
     nickedName: 'نصف جهان',
@@ -56,15 +65,6 @@ const uniteds: unitedsType = [
     island : false,
     cities : []
   },
-  {
-    title: 'کیش',
-    name : 'kish',
-    nickedName: 'عروس جزایر مرجانی',
-    island : true,
-    id : uuid(),
-    stars: 5,
-    cities : []
-  }
 ]
 
 export default uniteds
