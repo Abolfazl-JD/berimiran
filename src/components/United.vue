@@ -17,9 +17,9 @@ const getImageUrl = () => {
             <img 
                 :src="getImageUrl()" 
                 alt=""
-                class="h-250px united-pic w-350px transition-all ease duration-300 p-0.25rem bg-light-500 dark:bg-dark-600 border border-solid border-gray-400 dark:border-gray-700 max-w-full"
+                class="h-250px united-pic w-350px transition-all ease duration-300 p-0.25rem bg-light-500 dark:bg-black border border-solid border-gray-400 dark:border-gray-700 max-w-full"
             />
-            <div class="text-center rounded-md rounded-t-none bg-white dark:bg-dark-600 py-3 my-0 mx-auto border-t-0 border border-dotted border-gray-500">
+            <div class="text-center rounded-md rounded-t-none bg-white dark:bg-black py-3 my-0 mx-auto border-t-0 border border-dotted border-gray-500">
                 <h3 class="text-black dark:text-white text-size-25px font-medium mb-0.5rem leading-5">
                      {{unitedInfo.island ? ' جزیره ' : 'استان ' }}{{ unitedInfo.title }}
                 </h3>
